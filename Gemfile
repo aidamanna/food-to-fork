@@ -1,0 +1,12 @@
+source 'https://rubygems.org'
+
+ruby '2.1.7'
+gem 'cucumber'
+gem 'rspec'
+gem 'page-object'
+gem 'rspec-expectations'
+gem 'watir-webdriver'
+gem 'selenium-webdriver', '2.47.1'
+gem 'rest-client'
+gem 'json'
+gem 'json_spec'
