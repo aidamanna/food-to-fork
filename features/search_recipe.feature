@@ -1,3 +1,4 @@
+@front @back
 Feature: Search recipe
 
   Scenario: Search existing recipe

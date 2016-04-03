@@ -1,4 +1,4 @@
-module SearchRecipeBackStep
+module SearchRecipeBackSteps
 
   def register
     @api_key = ENV['API_KEY']
@@ -18,3 +18,5 @@ module SearchRecipeBackStep
   end
 
 end
+
+World(SearchRecipeBackSteps) if ENV['LEVEL'] == 'back'

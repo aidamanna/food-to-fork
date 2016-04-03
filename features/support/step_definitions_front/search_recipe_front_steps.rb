@@ -15,3 +15,5 @@ module SearchRecipeFrontSteps
   end
 
 end
+
+World(SearchRecipeFrontSteps) if ENV['LEVEL'] == 'front'
