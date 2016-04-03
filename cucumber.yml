@@ -1,2 +1,4 @@
 default:
+  LEVEL=front
+  -t @front
   --format pretty
