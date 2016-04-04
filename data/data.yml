@@ -1,4 +1,5 @@
+api_key: 960ad0a05e8a45e0e5e177e01d66959b
 login_url: http://food2fork.com/register/login
-recipes_url: http://food2fork.com
+recipes_url: http://food2fork.com/api/search
 email: bugbustersbcn@gmail.com
 password: bug123

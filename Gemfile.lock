@@ -24,6 +24,8 @@ GEM
       unf (>= 0.0.5, < 1.0.0)
     event-bus (0.1.0)
     faker (1.6.1)
+    dotenv (2.1.0)
+    faker (1.6.3)
       i18n (~> 0.5)
     ffi (1.9.10)
     gherkin (3.2.0)
@@ -80,6 +82,7 @@ PLATFORMS
 
 DEPENDENCIES
   cucumber
+  dotenv
   json
   json_spec
   page-object

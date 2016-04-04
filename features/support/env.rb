@@ -9,6 +9,9 @@ require 'json'
 require 'rubygems'
 require 'yaml'
 require 'json_spec/cucumber'
+require 'dotenv'
+
+Dotenv.load
 
 
 include RSpec::Matchers
