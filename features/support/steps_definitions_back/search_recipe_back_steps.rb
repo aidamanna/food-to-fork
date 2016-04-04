@@ -5,7 +5,7 @@ module SearchRecipeBackStep
   end
 
   def search_recipe(text)
-    url = ENV['RECIPES_URL']
+    url = ENV['RECIPES_ENDPOINT']
     @response = RestClient.get url, {:params => {key: @api_key, q: text}}
   end
 
