@@ -1,11 +1,11 @@
 module SearchRecipeBackStep
 
   def register
-    @api_key = $data['api_key']
+    @api_key = ENV['API_KEY']
   end
 
   def search_recipe(text)
-    url = $data['search_recipe_url']
+    url = ENV['RECIPES_URL']
     @response = RestClient.get url, {:params => {key: @api_key, q: text}}
   end
 

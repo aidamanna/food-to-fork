@@ -2,7 +2,7 @@ class LogInPage
 
   include PageObject
 
-  page_url $data['login_url']
+  page_url ENV['LOGIN_URL']
 
   text_field(:email, id:'auth_user_email')
   text_field(:password, id:'auth_user_password')
@@ -10,8 +10,8 @@ class LogInPage
   div(:logged_msg, class:'flash')
 
   def register
-    self.email = $data['email']
-    self.password = $data['password']
+    self.email = ENV['EMAIL']
+    self.password = ENV['PASSWORD']
     self.submit
     wait_until { self.logged_msg_element.visible? }
   end

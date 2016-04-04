@@ -2,7 +2,7 @@ class RecipesPage
 
   include PageObject
 
-  page_url $data['recipes_url']
+  page_url ENV['RECIPES_URL']
 
   text_field(:search_box, id:'typeahead')
   spans(:recipes_name_list, css:'.item.masonry-brick .recipe-name')
